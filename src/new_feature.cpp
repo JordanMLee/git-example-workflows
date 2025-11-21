@@ -1,20 +1,12 @@
-#include <iostream>
+#include "new_feature.h"
 
 using namespace std;
 
-void functionality() {
-    string message = "Executing new feature functionality.";
-    cout << message << endl;
-    cout << "This is the new feature!" << endl;
+string functionality() {
+    string message = "Executing new feature functionality.\n";
+    return message;
 }
 
-void more_functionality() {
-    cout << "More functionality can be added here." << endl;
-}
-
-int main() {
-    functionality();
-    more_functionality();
-    cout << "New features implemented! yay!" << endl;
-    return 0;
+string more_functionality() {
+    return "Executing more functionality of the new feature.\n";
 }
